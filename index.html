@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '825983117218961');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      window.global = window;
+      window.process = { env: { NODE_ENV: 'development' } };
+      
+      // Prevent libraries from crashing when trying to overwrite fetch
+      (function() {
+        const originalFetch = window.fetch;
+        if (typeof originalFetch === 'function') {
+          try {
+            Object.defineProperty(window, 'fetch', {
+              get() { return originalFetch; },
+              set(v) { console.warn('A library tried to overwrite window.fetch. This was prevented to avoid crashes.'); },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e) {
+            // If we can't redefine it, it might already be locked down by the environment
+            console.warn('Could not redefine window.fetch:', e);
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=825983117218961&ev=PageView&noscript=1"
+    /></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
