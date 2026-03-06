@@ -65,7 +65,7 @@ const Hero = () => (
       transition={{ delay: 0.4 }}
     >
       <a 
-        href="https://pay.hotmart.com/Y104624681X?checkoutMode=10&bid=1772810709191"
+        href="#vsl"
         className="gradient-btn text-xl px-12 py-6 inline-flex items-center justify-center gap-2"
       >
         Quero Meus Moldes Agora! 🎨
@@ -75,7 +75,7 @@ const Hero = () => (
 );
 
 const VideoSection = () => (
-  <section className="section-padding pt-0">
+  <section id="vsl" className="section-padding pt-0">
     <div className="max-w-[400px] mx-auto">
       <div className="relative shadow-2xl rounded-2xl overflow-hidden" style={{ padding: '177.78% 0 0 0' }}>
         <iframe 
@@ -300,7 +300,7 @@ const Features = () => {
 };
 
 const Pricing = () => (
-  <section className="section-padding bg-slate-50">
+  <section id="pricing" className="section-padding bg-slate-50">
     <h2 className="text-3xl font-bold text-center mb-12">Escolha Seu <span className="text-[#fb923c]">Plano Ideal</span></h2>
     <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
       {/* Basic Plan */}
@@ -426,7 +426,7 @@ const Guarantee = () => (
       </p>
     </div>
     <a 
-      href="https://pay.hotmart.com/Y104624681X?checkoutMode=10&bid=1772810709191"
+      href="#pricing"
       className="gradient-btn text-xl px-12 py-6 flex items-center justify-center gap-2 mx-auto max-w-fit"
     >
       Quero Meus Moldes! 🎨
