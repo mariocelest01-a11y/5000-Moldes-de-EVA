@@ -14,7 +14,7 @@ body {
 }
 
 .gradient-btn {
-  @apply bg-gradient-to-r from-[#f472b6] to-[#fb923c] hover:scale-105 transition-transform duration-200 text-white font-bold py-4 px-8 rounded-full shadow-lg;
+  @apply bg-gradient-to-r from-blue-600 to-indigo-700 hover:scale-105 transition-transform duration-200 text-white font-bold py-4 px-8 rounded-full shadow-lg;
 }
 
 .section-padding {
