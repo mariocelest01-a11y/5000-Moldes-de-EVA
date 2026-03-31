@@ -60,7 +60,7 @@ const Hero = () => (
     <div className="max-w-4xl mx-auto mt-4 mb-10 px-4">
       <div className="relative shadow-2xl rounded-2xl overflow-hidden">
         <img 
-          src="https://img.sanishtech.com/u/7dd1d65a73ea21de45e3f3ad328b486a.png" 
+          src="https://img.sanishtech.com/u/7a07fed4def889d29e3b69e20035eb89.png" 
           alt="Mockup VSL" 
           className="w-full h-auto block"
           referrerPolicy="no-referrer"
